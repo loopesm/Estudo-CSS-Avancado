@@ -1,0 +1,312 @@
+/* INÍCIO DAS CONFIGURAÇÕES GERIAS DA PÁGINA */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+#corpo-pagina-geral{
+    background: #FFF;
+}
+
+#corpo-cabecalho{
+    background: #000;
+}
+
+#titulo-pagina{
+    text-align: center;
+    color: yellow;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+#corpo-conteudo{
+    background: #FFF;
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+/* FIM DAS CONFIGURAÇÕES GERIAS DA PÁGINA */
+
+/* INÍCIO CONFIGURAÇÃO CONTEÚDOS */
+
+h2{
+    color: red;
+    border: 2px solid #000;
+}
+
+    /* INÍCIO BARRA DE NAVEGAÇÃO VERTICAL */
+
+#div-barra-navegacao-vertical{
+    margin: 0 auto;
+    width: 200px;
+}
+
+#div-barra-navegacao-vertical ul{
+    list-style-type: none;
+}
+
+#div-barra-navegacao-vertical ul a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    line-height: 40px;
+    width: 200px;
+    height: 40px;
+    background: #f7b600 url(imagens/menu.png) no-repeat;
+}
+#div-barra-navegacao-vertical li a:hover{
+    background-position: right bottom;
+    color: #FFF;
+    background-color: #f99200;
+}
+
+#ul-barra-navegacao-vertical{
+    margin: 0;
+    padding: 0;
+}
+
+.li-barra-navegacao-vertical{
+    display: block;
+    align-items: center;
+    padding: 0px;
+    font-weight: bold;
+
+}
+
+    /* FIM BARRA DE NAVEGAÇÃO VERTICAL */
+
+    /* INÍCIO BARRA DE NAVEGAÇÃO HORIZONTAL */
+
+#div-barra-navegacao-horizontal{
+    margin: 0 auto;
+    width: 80%;
+}
+
+#div-barra-navegacao-horizontal ul{
+    list-style-type: none;
+    padding-top: 2.1px;
+}
+
+#div-barra-navegacao-horizontal ul a{
+    display: block;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    background: #000 url(imagens/fundo-horizontal.png) repeat-x;
+}
+#div-barra-navegacao-horizontal li a:hover{
+    color: #085662;
+    background: #CCC;
+
+}
+
+#ul-barra-navegacao-horizontal{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.li-barra-navegacao-horizontal{
+    display: inline-table;
+    width: 20%;
+    margin: -2px;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+    /* FIM BARRA DE NAVEGAÇÃO HORIZONTAL */
+
+    /* INÍCIO ESTILIZANDO TABELAS */
+    
+#divEstiloTabelas{
+    margin: 0 auto;
+    width: 75%;
+
+}
+
+#tabela01{
+    border-collapse: separate;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #000;
+}
+
+.tdTabela01 , .thTabela01{
+    border: 1px solid #000;
+    text-align: left;
+    padding: 5px;
+    font-size: 90%;
+}
+
+.thTabela01 {
+    width: 33%;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+
+.colunaNumero{
+    text-align: right;
+
+}
+
+.linhaTabela:hover {
+    background-color: lightblue;
+}
+
+    /* FIM ESTILIZANDO TABELAS */
+
+    /* INÍCIO ESTILIZANDO FORMULÁRIOS SIMPLES */
+
+
+.divForm1{
+    margin: 0 auto;
+    width: 75%;
+}
+
+.fieldsetContatoLabel1{
+    padding: 1em;
+    border: 1px solid red;
+    background: #ccc;
+    
+}
+
+.legendForm1{
+    font-weight: bold;
+}
+
+.labelForm1{
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 50%;
+
+}
+
+.inputLabel1{
+    width: 50%;
+
+}
+
+    /* FIM ESTILIZANDO FORMULÁRIOS SIMPLES */
+
+    /* INÍCIO ESTILIZANDO FORMULÁRIOS LOGIN + SENHA */
+
+.divFundoForm2{
+
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #643d87 url(imagens/imgForm2/fundo.jpg) no-repeat top center;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+#divContainerForm2{
+    margin: 0 auto;
+    width: 75%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+}
+
+.imgContForm2{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+
+}
+
+.divLogForm2{
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.inputForm2{
+    background-color: #FFF;
+    margin: 0 auto;
+    margin-left: -10px;
+    height: 30px;
+    font-size: 14px;
+    width: 75%;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+}
+
+.inputForm2.email{
+    background-image: url(imagens/imgForm2/icone-usuario.png);
+}
+
+input.email::placeholder{
+    color: #000;
+}
+
+input.password::placeholder{
+    color: #000;
+}
+
+
+.inputForm2.password{
+    background-image: url(imagens/imgForm2/icone-cadeado.png);
+}
+
+.botaoForm2{
+    color: #000;
+    background-color: #f79300;
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+    margin: 0 auto;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+.botaoForm2:hover{
+    color: #FFF;
+    background-color: #f79300;
+    background: linear-gradient(to bottom, #fa0000, #fd7ea4)
+
+}
+
+    /* FIM ESTILIZANDO FORMULÁRIOS LOGIN + SENHA */
+
+    /* INÍCIO ARREDODAMENTO COM IMAGENS */
+
+.divArredondamento{
+    margin: 0 auto;
+    width: 400px;
+    background: #dedede url(/imagens/imgArredondamento/topo2.png) no-repeat left top;
+}
+
+.h3Arredondamento{
+    padding: 10px 20px 0 20px;
+}
+
+.pArredondamento{
+    background: #dedede url(/imagens/imgArredondamento/baixo2.png) no-repeat left bottom;
+    padding: 0px 20px 20px 20px;
+}
+
+
+
+
+    /* FIM ARREDODAMENTO COM IMAGENS */
+
+
+
+/* FIM CONFIGURAÇÃO CONTEÚDOS */

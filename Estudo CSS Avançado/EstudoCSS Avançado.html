@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang=”pt-br”>
+
+ <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Estudo Avançado CSS</title>
+  <meta name="description" content="Conteúdos sobre o estudo em CSS em um nível avançado.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  
+ </head>
+
+ <body id="corpo-pagina-geral">
+  <script src="" async defer></script>
+
+  <!-- INÍCIO CABEÇALHO -->
+  <div id="corpo-cabecalho">
+
+    <h1 id="titulo-pagina">Estudo Sobre CSS - Intermediário & Avançado </h1>
+
+  </div>
+  <!-- FIM CABEÇALHO -->
+
+  <!-- INÍCIO CONTEÚDO -->
+  <div id="corpo-conteudo">
+
+    <br>
+    <h2> Seletores </h2>
+    <br>
+
+    <p> Usamos os <strong>Seletores</strong> para facilitar na definição de atributos para os elementos do Projeto </p>
+    <br>
+
+    <a href="https://drive.google.com/file/d/1M4J_T8xpk2h0_xtnriYECLfGWWgIBnh6/view?usp=drive_link"> Link do PDF com mais informações sobre seletores </a>
+    <br><br>
+
+    <p> <strong>OBS.:</strong> Os tipos de seletores que iremos estudar são:  </p>
+    <p> - Seletor Universal </p>
+    <p> - Seletor de Texto </p>
+    <p> - Seletor de Classe </p>
+    <p> - Seletor de ID </p>
+    <p> - Seletor de Filho </p>
+    <p> - Seletor de Descendente </p>
+    <p> - Seletor de Irmão Adjacente </p>
+    <p> - Seletor de Irmão Geral </p>
+    <br>
+
+    <br>
+    <h2> Herança e Especificidade </h2>
+    <br>
+
+    <p> Em <strong>Herança</strong> tratamos sobre atributos gerais que 
+      incluimos em elementos, na qual todos os elementos contidos dentro 
+      desse elemento "pai" acabam recebendo esses atributos automaticamente,
+      e posteiormente podemos incluir atributos mais especificos 
+      caso quisermos.</p>
+    <br>
+
+    <p> Em <strong>Especificidade</strong> teremos que para dois
+      seletores iguais, o ultimo atributo no código é que será aplicado
+      aos elementos. [ Salvo quando colocado o atributo "!important" para
+      algum dos atributos, ai o navegador vair entender que aquela 
+      formatação é mais importante que as outras - porém não é recomendado
+      que seja atilizado com frequencia ]. </p>
+
+    <p> Os Seletores mais especificos também terão os atributos mais
+      importantes para o navegador aplicar nos elementos. </p>
+    <br>
+
+    <br>
+    <h2> Criar Barra de Navegação Lateral </h2>
+    <br>
+
+    <p> Abaixo foi criado um exemplo de barra de navegação vertical
+      em código HTML puro [ será possivel ver a metodologia no código 
+      fonte deste arquivo ].  </p>
+    <br>
+
+    <div id="div-barra-navegacao-vertical">
+
+      <h2>Menu Vertical</h2>
+      <ul id="barra-navegacao-vertical">
+        <li class="li-barra-navegacao-vertical"><a href="">Home</a></li>
+        <li class="li-barra-navegacao-vertical"><a href="">Serviços</a></li>
+        <li class="li-barra-navegacao-vertical"><a href="">Notícias</a></li>
+        <li class="li-barra-navegacao-vertical"><a href="">Sobre</a></li>
+        <li class="li-barra-navegacao-vertical"><a href="">Contato</a></li>
+      </ul>
+
+    </div>
+    
+    <br>
+    <p> Nesta seção da barra lateral tivemos os insights abaixo: </p>
+
+    <br>
+    <p> - Para Listas, sempre colocar o comando "list-style-type: none"
+      no Seletor "ul" para limpar a formatação padrão das listas. </p>
+    
+    <br>
+    <p> - Reposicionamento de uma imagem ao passar o mouse [ usando os comandos = 
+      "background-position: right bottom" no estado HOVER do link + "background: url() no-repeat;"
+      no BACKGROUND do Seletor "a" + um Background #f7b600 que é parecido com o 
+      da imagem para caso a imagem selecionada não seja carregada. 
+    </p>
+    <br>
+    <p> - Usamos o comando "line-height" para centralizar o text verticalmente
+      dentro do Seletor "a".
+    </p>
+
+    <br>
+    <p> - Para alguns itens é necessário atribuir "display: block;" 
+      para que o mesmo receba certos atributos ( que caso seja um elemento in-line, não receberia ).
+    </p>
+    <br>
+
+    <br>
+    <h2> Marcar Página Atual </h2>
+    <br>
+
+    <p> Marcar a página que está sendo exibida atualmente, porém isso não tem tanta
+      relevância em determinados projetos, seria mais algo complementar.
+    </p>
+    <br>
+
+    <br>
+    <h2> Criar uma Barra de Navegação Horizontal </h2>
+    <br>
+
+    <p> Abaixo foi criado um exemplo de barra de navegação horizontal
+      em código HTML puro [ será possivel ver a metodologia no código 
+      fonte deste arquivo ]. </p>
+    <br>
+
+    <div id="div-barra-navegacao-horizontal">
+
+      <h2>Menu Horizontal</h2>
+      <ul id="barra-navegacao-vertical">
+        <span class="li-barra-navegacao-horizontal"><li><a href="">Home</a></li></span>
+        <span class="li-barra-navegacao-horizontal"><li><a href="">Serviços</a></li></span>
+        <span class="li-barra-navegacao-horizontal"><li><a href="">Notícias</a></li></span>
+        <span class="li-barra-navegacao-horizontal"><li><a href="">Sobre</a></li></span>
+        <span class="li-barra-navegacao-horizontal"><li><a href="">Contato</a></li></span>
+      </ul>
+
+    </div>
+    <br>
+
+    <p> Nesse Menu Horizontal foi utilizado SPAN para que os itens pudessem
+      ser alinhados horizontalmente. </p>
+    <br>
+
+    <br>
+    <h2> Navegação com Abas </h2>
+    <br>
+
+    <p> Neste tópico é feito um menu horizontal que marca qual página está
+      selecionada, porém essa função é especifica para determinados
+      projetos e teria que ser usado "arquivos de html" diferentes para
+      realizar essa configuração. </p>
+    <br>
+
+    <br>
+    <h2> Layout de Largura Fixa e Layout Líquido </h2>
+    <br>
+
+    <p> Este tópico trata sobre ajustar os elementos automaticamente conforme 
+      realizamos o redimencionamento da janela do navegaor. Neste arquivo de 
+      estudos á está sendo utilizado essas práticas de redimencionamento [ Lembrando
+      que isso não chegamos no módulo de Bootstrap, no qual teremos um estudo especifico
+      sobre Layouts para dispositivos Desktop e Mobile - Responsívos ]. </p>
+    <br>
+
+    <p><strong>OBS.:</strong> Por questão de usabilidade, podemos colocar a DIV conteúdo,
+      antes da DIV navegação. Para que leitores de tela, para pessoas que não enxergam,
+      possam ler primeiro o conteúdo da página, e logo após isso, ler a barra de navegação.  </p>
+    <br>
+
+    <p> - Para travar a largura mínima de uma tela usamos o atributo = "min-width" </p>
+    <p> - Para travar a largura máxima de uma tela usamos o atributo = "max-width" </p>
+    <p> - Para travar a altura mínima de uma tela usamos o atributo = "min-height" </p>
+    <p> - Para travar a altura máxima de uma tela usamos o atributo = "max-height" </p>
+    <br>
+
+    <p><strong>OBS.:</strong> Para realizar o ajuste de imagens, é da mesma forma 
+      de reajustar as DIVs </p>
+    <br>
+
+    <br>
+    <h2> Estilizando Tabelas </h2>
+    <br>
+
+    <p> Dentro de Estilo podemos usar o comando "border-collapse: separate" ou "border-collapse: collapse" 
+      para configurarmos o espaçamento entre as bordas da nossa tabela. </p>
+    <br>
+
+    <p> Outro comando que aprendemos, é o "text-transform: uppercase" onde podemos
+      colocar todas as letras do cabeçalho em maiusculas. </p>
+
+
+    <br>
+    <div id="divEstiloTabelas">
+      
+      <table id="tabela01">
+
+        <tr class="linhaTabela">
+          <th class="thTabela01"> Código </th>
+          <th class="thTabela01"> Produto </th>
+          <th class="thTabela01 colunaNumero"> Preço </th>
+        </tr>
+
+        <tr class="linhaTabela">
+          <td class="tdTabela01"> 001 </td>
+          <td class="tdTabela01"> Notebook </td>
+          <td class="tdTabela01 colunaNumero"> R$ 2.500,00 </td>
+        </tr>
+
+        <tr class="linhaTabela">
+          <td class="tdTabela01"> 002 </td>
+          <td class="tdTabela01"> Tablet </td>
+          <td class="tdTabela01 colunaNumero"> R$ 1.500,00 </td>
+        </tr>
+
+        <tr class="linhaTabela">
+          <td class="tdTabela01"> 003 </td>
+          <td class="tdTabela01"> Iphone </td>
+          <td class="tdTabela01 colunaNumero"> R$ 3.500,00 </td>
+        </tr>
+
+        <tr class="linhaTabela">
+          <td class="tdTabela01"> 004 </td>
+          <td class="tdTabela01"> Nexus </td>
+          <td class="tdTabela01 colunaNumero"> R$ 3.000,00 </td>
+        </tr>
+
+      </table>
+    
+    </div>
+    <br>
+
+    <br>
+    <h2> Estilizando Formulários Simples </h2>
+    <br>
+
+    <p> Aprendendo Novas Funções para uso e Formulários </p>
+    <br>
+
+      <div class="divForm1">
+
+        <form action="">
+
+          <fieldset class="fieldsetContatoLabel1">
+
+            <legend class="legendForm1"> Detalhes de Contato </legend>
+
+            <div class="divInputForm1">
+
+              <label for="nome" class="labelForm1">Nome:</label>
+              <input class="inputLabel1" type="text" name="nome" id="nome">
+
+            </div>
+
+            <div class="divInputForm1">
+
+              <label for="email" class="labelForm1">E-mail:</label>
+              <input class="inputLabel1" type="text" name="email" id="email">
+
+            </div>
+
+            <div class="divInputForm1">
+
+              <label for="url" class="labelForm1">Site:</label>
+              <input class="inputLabel1" type="text" name="url" id="url">
+
+            </div>
+
+          </fieldset>
+
+
+
+        </form>
+
+      </div>
+      <br>
+
+      <br>
+      <h2> Estilizando Formulários Login + Senha </h2>
+      <br>
+
+      <p> Vamos estilizar um formulário com autenticação via senha </p>
+      <br>
+
+      <div class="divFundoForm2">
+
+        <div id="divContainerForm2">
+
+          <img class="imgContForm2" src="imagens/imgForm2/perfil.png" alt="">
+          
+          <form class="form2" action="">
+
+            <div class="divLogForm2">
+              <input class="inputForm2 email" type="text" name="email" id="email" placeholder="Digite Seu E-mail ...">
+            </div>
+
+            <div class="divLogForm2">
+              <input class="inputForm2 password" type="password" name="senha" id="senha" placeholder="Digite Sua Senha ...">
+            </div>
+
+            <div class="divLogForm2">
+              <input class="botaoForm2" type="submit" name="" id="" value="Logar">
+            </div>
+
+
+          </form>
+
+        </div>
+
+      </div>
+      <br>
+
+      <br>
+      <h2> Arredondamento com Imagens </h2>
+      <br>
+
+      <p></p>
+
+      <div class="divArredondamento">
+        
+        <h3 class="h3Arredondamento">Cabeçalho de Teste</h3>
+        <br>
+        <p class="pArredondamento">Conteúdo de teste para o aprendizado de Arredondamento com 
+          imagens </p>
+      </div>
+      <br>
+
+      <br>
+      <h2> PARALLAX </h2>
+      <br>
+      
+      <p> Esse efeito consiste em fazer a transição de imagens de fundo no Site
+        com o posicionamento delas em estado fixo.</p>
+      <br>
+
+      <p> A altura do BODY é definida em 100% </p>
+      <br>
+
+      <p> BACKGROUND-SIZE + COVER = DEIXA A IMAGEM NO TOTAL DO TAMANHO DA TELA </p>
+      <br>
+
+      <p> BACKGROUND-POSITION + CENTER = CENTRALIZAR A IMAGEM </p>
+      <br>
+
+      <p> BACKGROUND-ATTACHMENT + FIXED = FIXA A IMAGEM E UMA SOBREPÕE A OUTRA </p>
+      <br>
+
+      <br>
+      <h2> Usando Fontes Customizadas </h2>
+      <br>
+
+      <p> É preciso baixar o Arquivos da Fonte para colocar na pasta do projeto. </p>
+      <br>
+
+      <p> Site Sugerido para Download de Fontes: <a href="https://dafont.com"> DAFONTE </a> </p>
+      <br>
+
+      <p><strong>OBS:. Esse site é para uso pessoal, para projetos mais avançados, deve se olhar os 
+        direitos autorais das fontes.</strong></p>
+      <br>
+
+      <p> É preciso formatar o arquivo da fonte para WOFF [ para usar na WEB ] </p>
+      <br>
+
+      <p> Site Sugerido para Conversão: <a href="https://transfonter.org"> TRANSFONTER </a> </p>
+      <br>
+
+      <p> DEFININDO A NOVA FONTE [ Para usar mais de uma fonte, ai duplica esse código ] : </p>
+      <br>
+      <p> @font-face {} </p>
+      <p> font-family: "DEFINE O NOME DA FONTE" </p>
+      <p> src: url(LOCALIZAÇÃO DA FONTE NA PASTA DO PROJETO) </p>
+      <br>
+      
+      <br>
+      <h2> Fim deste Bloco de Estudos </h2>
+      <br>
+
+
+
+
+
+    </div>
+
+
+    
+    
+
+
+  <br><br><br><br><br>
+  </div>
+  <!-- FIM CONTEÚDO -->
+
+ </body>
+ 
+</html>
